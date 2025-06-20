@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Page</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 40px;
+      background-image: url(images/download.webp);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="color: rgb(193, 255, 23); font-family: 'Times New Roman', Times, serif;":>Hello, World!</h1>
+  <p>This is a paragraph.</p>
+  <a href="https://www.example.com">Visit Example</a><br><br>
+  <abbr title="Nandha kishore">NK</abbr>
+
+  <!-- Table -->
+   <section id="table">
+    <h2 style="color: red; font-family: 'Times New Roman', Times, serif;":>Table</h2>
+    <table border="1">
+      <tr><th>Name</th><th>Role</th></tr>
+      <tr><td>Bhanu</td><td>Developer</td></tr>
+      <tr><td>Veteesh</td><td>AI Developer</td></tr>
+    </table>
+  </section>
+
+  <!-- Lists -->
+  <section id="lists">
+    <h2 style="color: red; font-family: 'Times New Roman', Times, serif;":>Lists</h2>
+    <h3>Ordered List</h3>
+    <ol>
+      <li>Learn HTML</li>
+      <li>Practice Coding</li>
+      <li>Build Projects</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+      <li>Frontend</li>
+      <li>Backend</li>
+      <li>Database</li>
+    </ul>
+
+    <h3 style="color: red; font-family: 'Times New Roman', Times, serif;":>Description List</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Structure of the web page</dd>
+      <dt>CSS</dt>
+      <dd>Styles the web page</dd>
+      <dt>JavaScript</dt>
+      <dd>Adds interactivity</dd>
+    </dl>
+  </section>
+
+  <!-- Form -->
+  <section id="form">
+    <h2 style="color: red; font-family: 'Times New Roman', Times, serif;":>Contact Form</h2>
+    <form>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male"> Male
+      <input type="radio" id="female" name="gender" value="female"> Female
+<br>
+      <label>Skills:</label>
+      <input type="checkbox" name="skills" value="html"> HTML
+      <input type="checkbox" name="skills" value="css"> CSS
+      <input type="checkbox" name="skills" value="js"> JavaScript
+<br>
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="">--Select--</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+      </select>
+<br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+<br>
+      <input type="submit" value="Submit">
+    </form>                                                                   
+  </section>
+
+</body>
+</html>
