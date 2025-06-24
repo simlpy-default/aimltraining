@@ -5,15 +5,14 @@
   <title>Calculator</title>
   <style>
     body {
-      background: #ff4646;
+      background: #000000;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
     }
 
     .calc {
-      background: #eeff00;
+      background: #ffffff;
       border-radius: 12px;
       padding: 20px;
       width: 300px;
@@ -24,11 +23,12 @@
 
     .display {
       height: 60px;
-      background-color: #e0e0e0;
+      background-color: #000000;
+      color: white;
       border-radius: 10px;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: center;
       overflow: hidden;
       text-align: center;
     }
@@ -40,29 +40,26 @@
     }
 
     .btn {
-      background-color: #ff9900;
+      background-color: #000000;
+      color: white;
       border: none;
       border-radius: 8px;
       padding: 20px;
       font-size: 1.2rem;
       text-align: center;
+      box-shadow: 5px 10px 20px greenyellow;
     }
 
-    .operator {
-      background-color: #4CAF50;
-      color: white;
+    .btn:hover{
+        box-shadow: 0px 0px 30px red;
+        cursor: pointer;
     }
 
-    .equals {
-      background-color: #2196F3;
-      color: white;
-      grid-column: span 2;
-    }
   </style>
 </head>
 <body>
   <div class="calc">
-    <div class="display">0000</div>
+    <div class="display">Enter : <input type="number" placeholder="Calculate"></div>
     <div class="buttons">
       <div class="btn">7</div>
       <div class="btn">8</div>
