@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+</head>
+<body>
+  <p id="message" class="greeting">Hi there</p>
+  <input type="text" id="nameInput" class="input-box" placeholder="Enter your name">
+  <button onclick="func()" class="btn">Click Me</button>
+  <button onclick="reloadPage()" class="btn">Reload (Ctrl+R)</button>
+  <div id="myDiv" class="info-box">This is a division. Click the button to change me!</div>
+  <h2 id="myHeading">This is a heading to be removed</h2>
+  <script>
+    function func() {
+      document.title = 'Hello World';
+      var name = document.getElementById('nameInput').value;
+      // Using class name
+      var greetingElements = document.getElementsByClassName('greeting');
+        greetingElements[0].textContent = 'Hello, ' + name + '!';
+      // Using tag name
+      var allParagraphs = document.getElementsByTagName('p');
+        allParagraphs[1].textContent = 'This is the second paragraph selected by tag name.';
+      // Change division content
+      var myDiv = document.getElementById('myDiv');
+      myDiv.textContent = 'The division content has changed!';
+        // Remove h2 and replace with normal text
+      var heading = document.getElementById('myHeading');
+        var textNode = document.createTextNode('This was a heading, now normal text.');
+        heading.parentNode.replaceChild(textNode, heading);
+    }
+    function reloadPage() {
+      location.reload();
+    }
+  </script>
+  <p>This is another paragraph for tag name demo.</p>
+</body>
+</html>
