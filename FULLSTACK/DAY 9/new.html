@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green and White Text Example</title>
+    <style>
+        body {
+            background: #ff0000;
+            color: #ffffff; /* green */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph</p>
+    <button onclick="func()">Change Color</button>
+    <script>
+        let X = false;
+        function func() {
+            /*if (!X) {
+                document.getElementsByTagName('h1')[0].style.backgroundColor = 'green';
+                document.body.style.backgroundColor = 'blue';
+                document.body.style.color = 'white';
+                document.getElementsByTagName('h1')[0].style.fontSize = '50px';
+            } else {
+                document.getElementsByTagName('h1')[0].style.backgroundColor = '';
+                document.body.style.backgroundColor = '';
+                document.body.style.color = '';
+                document.getElementsByTagName('h1')[0].style.fontSize = '';
+            }
+            X = !X; */
+
+
+            // Toggle the background color of the body in simple steps
+            
+            let a=document.body.style.backgroundColor;
+            a=a==="red"?"blue":"red";
+            document.body.style.backgroundColor=a;
+        }
+    </script>
+</body>
+</html>
