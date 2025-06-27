@@ -5,8 +5,8 @@
     <title>Green and White Text Example</title>
     <style>
         body {
-            background: #fff;
-            color: #228B22; /* green */
+            background: #ff0000;
+            color: #ffffff; /* green */
             font-family: Arial, sans-serif;
         }
     </style>
@@ -18,7 +18,7 @@
     <script>
         let X = false;
         function func() {
-            if (!X) {
+            /*if (!X) {
                 document.getElementsByTagName('h1')[0].style.backgroundColor = 'green';
                 document.body.style.backgroundColor = 'blue';
                 document.body.style.color = 'white';
@@ -29,7 +29,14 @@
                 document.body.style.color = '';
                 document.getElementsByTagName('h1')[0].style.fontSize = '';
             }
-            X = !X;
+            X = !X; */
+
+
+            // Toggle the background color of the body in simple steps
+            
+            let a=document.body.style.backgroundColor;
+            a=a==="red"?"blue":"red";
+            document.body.style.backgroundColor=a;
         }
     </script>
 </body>
