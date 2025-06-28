@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="division-block">
+        <h1>Welcome</h1>
+        <p>This is a paragraph</p>
+    </div>
+    <div class="tutoraial">This is the second div for effect function</div>
+    <button onclick="diss()">clear</button>
+    <button onclick="effect()">Apply Effect</button>
+    <script>
+        function diss(){
+            let div=document.querySelector('.division-block');
+            if(div.style.display==='none'){
+                div.style.display='block';
+            } else {
+                div.style.display='none';
+            }
+        }
+        function effect(){
+            let p=document.querySelector('.tutoraial');
+            p.style.backgroundColor='red';
+            p.style.color='white';
+            p.style.fontSize='20px';
+            p.style.fontWeight='bold';
+            p.style.textAlign='center';
+            p.style.border='2px solid black';
+            p.style.padding='10px';
+        }
+    </script>
+</body>
+</html>
