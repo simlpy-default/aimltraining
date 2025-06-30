@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(247, 144, 144);
+            border: 2px solid rgb(255, 12, 12);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        p {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h1>heading 1</h1>
+        <p>paragraph 1</p>
+    </div><br>
+    <input type="text" id="input" placeholder="Type something here...">
+    <input type="reset" value="Reset" id="reset"><br><br>
+    <input type="submit" value="Submit" id="submit">
+    <script>
+        let a=document.getElementById("div");
+        a.addEventListener("click", function() {
+            a.innerHTML = "Div Clicked!";
+            a.style.backgroundColor = "grey";
+        });
+        a.addEventListener("mouseover", function() {
+            a.innerHTML = "Mouse inside Detected!";
+            a.style.backgroundColor = "green";
+        });
+        a.addEventListener("mouseout", function() {
+            a.innerHTML = "Mouse Outer Detected!";
+            a.style.backgroundColor = "lightblue";
+        });
+        a.addEventListener("mouseup", function() {
+            a.innerHTML = "<h1>Mouse!<h1>";
+            a.style.backgroundColor = "pink";
+        });
+        a.addEventListener("mousedown", function() {
+            a.innerHTML = "<h1>Mouse!<h1>";
+            a.style.backgroundColor = "pink";
+        });
+        a.addEventListener("dblclick", function() {
+            a.innerHTML = "<h1>Double Click Detected!</h1>";
+            a.style.backgroundColor = "yellow";
+        });
+ 
+        a.addEventListener("wheel", function(event) {
+            event.preventDefault(); // Prevent the default scroll behavior
+            a.innerHTML = "<h1>Mouse Wheel Scrolled!</h1>";
+            a.style.backgroundColor = "white";
+        });
+
+        let input = document.getElementById("input");
+        let reset = document.getElementById("reset");
+        let submit = document.getElementById("submit");
+
+        reset.addEventListener("click", function() {
+            input.value = "";
+        });
+
+        submit.addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("Form submitted with value: " + input.value);
+        });
+    </script>
+</body>
+</html>
